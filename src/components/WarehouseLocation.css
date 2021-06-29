@@ -1,0 +1,64 @@
+.Main-Container{
+    width: 100%;
+
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items:flex-start;
+    background: linear-gradient(102.94deg,#50555c 0%, #898e95 50%, #9fa4ab 100%);
+}.Main-Container .Container-Header{
+    color: #FFFFFF;
+    text-transform: uppercase;
+    width: 90%;
+    margin-left: 100px;
+    margin-top: 30px;
+}.Main-Container > .Container-Regions{
+    text-transform: uppercase;
+    width: 100%;
+    margin-left: 100px;
+    margin-top: 30px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items:flex-start;
+    padding: 12px;
+    background: linear-gradient(102.94deg,#50555c 0%, #898e95 50%, #9fa4ab 100%);
+}.Main-Container > .Container-Regions > .Regions{
+    margin-top: 50px;
+    width: 50%;
+    display: grid;
+    justify-content: center;
+    align-items:center;
+    grid-template-columns: repeat(2,auto);
+
+}.Main-Container > .Container-Regions > .Regions > .G1,.G2,.G3,.G4{
+    width: 100px;
+    height: 100px;
+    background: rgba(0,0,0,0.2);
+    margin: 50px;
+    text-align: center;
+    line-height: 100px;
+    color: #FFFFFF;
+    font-weight: bold;
+    border-radius: .2rem;
+    text-decoration: none;
+}.Main-Container > .Container-Regions > .Region-Header{
+    color: #a7a5a5;
+}
+
+@media (max-width:768px){
+
+    .Main-Container .Container-Header{
+        margin: 5px;
+    }.Main-Container > .Container-Regions{
+        margin: 10px;
+        justify-content: center;
+    }.Main-Container > .Container-Regions > .Regions{
+         justify-content: center;
+         align-items: center;
+         width: 100%;
+    }
+
+}

@@ -1,24 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
-
+import WarehouseLocation from './components/WarehouseLocation';
+import Regions from './components/Regions';
+import {BrowserRouter as Router , Switch,Route} from 'react-router-dom'
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <>
+      <Router>
+          <Switch>
+              <Route exact path='/'>
+                   <WarehouseLocation/>
+              </Route>
+
+                <Route exact path='/regions/g1'>
+                  <Regions region="g1"/>
+              </Route>
+                <Route exact path='/regions/g2'>
+                  <Regions region="g2"/>
+              </Route>
+                <Route exact path='/regions/g3'>
+                  <Regions region="g3"/>
+              </Route>
+                <Route exact path='/regions/g4'>
+                  <Regions region="g4"/>
+              </Route>
+          </Switch>
+      </Router>
+       
+      </>
   );
 }
 
